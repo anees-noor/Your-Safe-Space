@@ -51,4 +51,4 @@ Anees Noor
 
 Computer Science Engineering Student
 
-                                                   🌷 Take a moment. Breathe. You deserve your own safe space. 💗
+🌷 Take a moment. Breathe. You deserve your own safe space.💗
