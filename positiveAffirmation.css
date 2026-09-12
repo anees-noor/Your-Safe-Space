@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px; /*top and bottom--40  left and right*/
+}
+h1{
+    animation: level 0.5s ease;
+   
+}
+.cards{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    background: #FFF;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 30px  palevioletred;
+    text-align: center;
+    cursor: pointer;
+    height: 430px;
+
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px  palevioletred;
+
+}
+.icon{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 20px;
+    color: #FF5C8A;
+    font-weight: 600;
+}
+.subtitle{
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 20px;
+}
+.open-text{
+    color: white;
+    background-color:burlywood ;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    display: inline-block;
+}
+.message{
+    display: none;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    max-height: 150px;
+    overflow-y: auto;
+}
+.card.open .message{ /*space means select .message elements that are inside an element which has both card and open classes*/
+    display: block;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+@keyframes level{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+
+    }
+}

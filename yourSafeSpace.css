@@ -1,0 +1,97 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*includes padding and border inside width*/
+}
+
+/*page background*/
+body{
+    height: 100vh; /*vh--element height=full screen height*/
+    font-family: 'Nunito',sans-serif;
+}
+
+.page{
+    height: 100vh;
+    background-color: #f4b6c2;
+   
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card{
+    position: absolute;
+    top: 32%;
+    left: 30%;
+}
+
+.your{
+    font-family: 'Pacifico',cursive;
+    color: #e7b14f;
+    font-size: 89px;
+}
+
+.safe{
+    font-family: 'Nunito',sans-serif;
+    color: #6fa3a9;
+    font-size: 69px;
+}
+
+.space{
+    font-family: 'Pacifico',cursive;
+    color: #f08a8a;
+    font-size: 99px;
+}
+
+.affirmations{
+    margin-top: 330px;
+    margin-left: 530px;
+    gap: 16px;
+    font-family:'Dancing Script';
+    font-size: 50px;
+    color: palevioletred;
+}
+
+.affirmations span{
+    opacity: 0;
+    animation: fadeUp 2.3s ease forwards;  /*fadeUp--its the name given to animation*/
+}                                        /*forward--element stays in its final state.Otherwise it will go back to invisible*/
+                                        /*2.3s--animation will finish in 2.3s*/
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;   
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 15px;
+    padding: 100px;
+   
+}
+
+button{
+    padding: 15px 20px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 30px;
+    background-color:peachpuff;
+}
+
+button:hover{
+    transform:translateY(-4px);    /*transform--css property used to change the position,size,rotation or shape of element
+                                    translate--move Y--vertical direction
+                                    negative--move up
+                                    positive--move down*/
+}
+
+
+
+
