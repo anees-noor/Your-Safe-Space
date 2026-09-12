@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mood Tracker</title>
+    </head>
+    <body style="background-color: bisque;">
+        <p style="text-align: center; margin-top: 30px; font-size: 70px; font-style: oblique;font-weight: lighter;">MOOD TRACKER</p>
+        <h2 style="text-align: center;margin-top: -80px;">~a quiet moment to notice how i feel</h2>
+
+    <form id="moodForm" style="text-align: center; border: 3px dotted darksalmon; width: 400px; border-radius: 5px; margin-left: 450px; height:500px;background-color: #F4C2C2; margin-top: 50px;">
+    <div class="question" style="margin-top: 40px;">
+        <h3>1. How are you feeling right now??</h3>
+        <select id="q1">
+          
+            <option value="1">Very Low</option>
+            <option value="2">Low</option>
+            <option value="3">Neutral</option>
+            <option value="4">Good</option>
+            <option value="5">Excellent</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <h3>2. How energetic do you feel?</h3>
+        <select id="q2">
+            
+            <option value="1">Exhausted</option>
+            <option value="2">Tired</option>
+            <option value="3">Okay</option>
+            <option value="4">Energetic</option>
+            <option value="5">Very Energetic</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <h3>3. How stressed do you feel?</h3>
+        <select id="q3">
+            
+            <option value="1">Extremely</option>
+            <option value="2">A lot</option>
+            <option value="3">Moderate</option>
+            <option value="4">Slightly</option>
+            <option value="5">Not at all</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <h3>4. How connected do you feel to others?</h3>
+       
+        <select id="q4">
+            
+            <option value="1">Isolated</option>
+            <option value="2">Distant</option>
+            <option value="3">Average</option>
+            <option value="4">Connected</option>
+            <option value="5">Very Connected</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <h3>5. How hopeful do you feel about tomorrow?</h3>
+        <select id="q5">
+            
+            <option value="1">Hopeless</option>
+            <option value="2">Uncertain</option>
+            <option value="3">Neutral</option>
+            <option value="4">Optimistic</option>
+            <option value="5">Very Optimistic</option>
+        </select>
+    </div><br><br>
+
+    <button type="button" onclick="showResult()">Submit</button>
+</form>
+
+<div id="resultBox">
+    <h3 id="moodTitle" style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;"></h3>
+    <p id="moodScore" style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;"></p>
+</div>
+    <script>
+
+        
+        function calculateMood(){
+        let q1= Number(document.getElementById("q1").value);
+        let q2= Number(document.getElementById("q2").value);
+        let q3= Number(document.getElementById("q3").value);
+        let q4= Number(document.getElementById("q4").value);
+        let q5= Number(document.getElementById("q5").value);
+
+        return q1+q2+q3+q4+q5;
+        
+        }
+  
+
+function showResult() {
+    const score = calculateMood();
+
+    let mood;
+
+    if (score <= 5) {
+        mood = "😔 Down / Heavy";
+    } else if (score <= 10 && score > 5) {
+        mood = "😐 Balanced / Steady";
+    } else {
+        mood = "😊 Good / Bright";
+    }
+
+    document.getElementById("moodTitle").textContent = mood;
+    document.getElementById("moodScore").textContent = `Score:${score}`;
+    
+
+}
+   
+    </script>  
+    </body>
+</html>

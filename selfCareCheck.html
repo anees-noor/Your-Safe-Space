@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Self Care Check</title>
+        <style>
+            body{
+                background-color: #E68FAC;
+            }
+            h1{
+                text-align: center;
+                font-family:'Times New Roman', Times, serif;
+                font-size: 60px;
+                font-weight: lighter;
+                color:lightpink;
+            }
+         
+            @keyframes slide{
+                from{
+                    transform:translateY(50px) rotate(-90deg);
+                    opacity: 0;
+
+                }
+                to{
+                    transform:translateY(-50px) rotate(-90deg);
+                    opacity: 1;
+
+                }
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                gap: 20px;
+                padding: 20px;
+                place-items: center;
+                max-width: 700px;
+                justify-content: center;
+                
+            }
+           .reminder{
+            animation:fadeIn 1s ease-in forwards;
+           }
+           @keyframes fadeIn {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity:1;
+            }
+            
+           }
+          .grid ul{
+            font-size: 20px;
+            color:antiquewhite;
+          }
+          .cards{
+            width: 100%;
+          }
+          .reminder{
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+            font-style: italic;
+            
+          }
+        </style>
+       
+    </head>
+    <body style="display: flex;">
+        <div style="margin-top: 250px;">
+            <h1 style="text-align: center;transform: rotate(-90deg)">The Glow-Up Guide</h1>
+            <h2 style=" font-family:cursive;
+                text-align: center;
+                font-size: 20px;
+                color:#E75480;
+                letter-spacing: 3px;
+                animation:slide 1s ease-in-out forwards;
+                margin-top: -45px; text-align: center;transform: rotate(-90deg)"><i>~becoming the best version of you~</i></h2>
+        </div>
+        <div class="grid">
+            <!--mindset-->
+            <div class="cards" style="border: 2px solid pink; border-radius:10px; width: 280px; height: 280px;padding: 20px;">
+                <h2 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: crimson; font-size: 30px;margin-top: 8px;"><u>Mindset</u></h2>
+                <ul>
+                    <li><input type="checkbox">Think positive</li>
+                    <li><input type="checkbox">Stop overthinking</li>
+                    <li><input type="checkbox">Less comparison</li>
+                    <li><input type="checkbox">Gratitude daily</li>
+                    <li><input type="checkbox">Protect your peace</li>
+                    <li><input type="checkbox">Celebrate small wins</li>
+                </ul>
+                <div class="reminder" style="border: 2px solid palevioletred; border-radius:10px; width: 240px; height:40pxpx;padding: 20px;">Your mind is your power</div>
+
+            </div>
+            <!--habits-->
+            <div class="cards" style="border: 2px solid pink; border-radius:10px; width: 280px; height: 280px;padding: 20px;">
+                  <h2 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: crimson; font-size: 30px;margin-top: 8px"><u>Habits</u></h2>
+                <ul>
+                    <li><input type="checkbox">Wake up early</li>
+                    <li><input type="checkbox">Plan your day</li>
+                    <li><input type="checkbox">Stay consistent</li>
+                    <li><input type="checkbox">Limit screen time</li>
+                    <li><input type="checkbox">Keep learning</li>
+                    <li><input type="checkbox">Practice confidence</li>
+                </ul>
+                <div class="reminder" style="border: 2px solid palevioletred; border-radius:10px; width: 240px; height:40pxpx;padding: 20px;">Small habits,big transformation</div>
+
+            </div>
+            <!--social life-->
+            <div class="cards" style="border: 2px solid pink; border-radius:10px; width: 280px; height: 280px;padding: 20px;">
+                  <h2 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: crimson; font-size: 30px;margin-top: -3px"><u>Social life</u></h2>
+                <ul>
+                    <li><input type="checkbox">Avoid drama</li>
+                    <li><input type="checkbox">Let go of toxic people</li>
+                    <li><input type="checkbox">Build real connection</li>
+                    <li><input type="checkbox">Protect your vibe</li>
+                    <li><input type="checkbox">Set boundaries</li>
+                    <li><input type="checkbox">Be kind and respectful</li>
+                </ul>
+                <div class="reminder" style="border: 2px solid palevioletred; border-radius:10px; width: 240px; height:40pxpx;padding: 20px;">Your circle shapes your world</div>
+
+            </div>
+           
+            <!--health-->
+            <div class="cards" style="border: 2px solid pink; border-radius:10px; width: 280px; height: 280px;padding: 20px;">
+                  <h2 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: crimson; font-size: 30px;margin-top: 4px"><u>Health</u></h2>
+                <ul>
+                    <li><input type="checkbox">Eat balanced food</li>
+                    <li><input type="checkbox">Meditate</li>
+                    <li><input type="checkbox">Don't skip meals</li>
+                    <li><input type="checkbox">Move your body</li>
+                    <li><input type="checkbox">Drink enough water</li>
+                    <li><input type="checkbox">Take breaks when needed</li>
+                </ul>
+                <div class="reminder" style="border: 2px solid palevioletred; border-radius:10px; width: 240px; height:40pxpx;padding: 20px;">Strong inside,glowing outside</div>
+
+            </div>
+            <!--sleep-->
+            <div class="cards" style="border: 2px solid pink; border-radius:10px; width: 280px; height: 280px;padding: 20px;">
+                  <h2 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: crimson; font-size: 30px;margin-top: -3px"><u>Sleep</u></h2>
+                <ul>
+                    <li><input type="checkbox">7-9 hours of sleep</li>
+                    <li><input type="checkbox">No screen before bed</li>
+                    <li><input type="checkbox">Sleep on time</li>
+                    <li><input type="checkbox">Wake up on time</li>
+                    <li><input type="checkbox">Avoid caffeine</li>
+                    <li><input type="checkbox">Keep room clean</li>
+                </ul>
+                <div class="reminder" style="border: 2px solid palevioletred; border-radius:10px; width: 240px; height:40pxpx;padding: 20px;">Good sleep fuels your glow</div>
+
+            </div>
+            <div class="cards" style="border: 2px solid pink; border-radius:10px; width: 280px; height: 280px;padding: 20px;">
+
+              <h2 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: crimson; font-size: 30px;margin-top: -5px"><u>Skin and Hair</u></h2>
+                <ul>
+                    <li><input type="checkbox">Drink enough water</li>
+                    <li><input type="checkbox">Use sunscreen</li>
+                    <li><input type="checkbox">Oil hair twice a week</li>
+                    <li><input type="checkbox">Wash face 2x daily</li>
+                    <li><input type="checkbox">Moisturize everyday</li>
+                    <li><input type="checkbox">Avoid heat styling</li>
+                </ul>
+                <div class="reminder" style="border: 2px solid palevioletred; border-radius:10px; width: 240px; height:40pxpx;padding: 20px;">Take care of your body</div>
+            </div>
+           <div style="margin-right: -700px;"><div><button onclick="checkProgress()" style="display:block;font-size:20px;background:palevioletred;margin:10px auto;padding:15px;color:white;border:none;border-radius:20px;cursor:pointer;">SUBMIT</button></div></div>
+        </div>
+<script>
+function checkProgress() {
+    const totalCheckboxes = document.querySelectorAll('input[type="checkbox"]').length;
+    const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked').length;
+
+    if (checkedBoxes === 0) {
+        alert("🌸 It's okay. Even starting is progress. Tomorrow is a new glow-up day!");
+    } 
+    else if (checkedBoxes <= totalCheckboxes / 2) {
+        alert("💗 You're doing good! Small steps still count. Keep going.");
+    } 
+    else if (checkedBoxes < totalCheckboxes) {
+        alert("✨ Amazing! You're really taking care of yourself today.");
+    } 
+    else {
+        alert("🌟 Perfect score! You showed up fully for yourself today. So proud!");
+    }
+}
+</script>
+        
+    </body>
+</html>

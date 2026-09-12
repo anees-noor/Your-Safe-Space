@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Positive Affirmations</title>
+        <link rel="stylesheet" href="positiveAffirmation.css">
+    </head>
+    <body>
+            <h2 style="margin-top: 50px; font-size: 40px; color:peru; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; animation: level 4s forwards;"><i>A little note for you💌</i></h2>
+            <br>
+            <div class="cards">
+
+                <div class="card" onclick="toggleCard(this)"><br>
+                    <div class="icon">🌧️</div><br>
+                    <div class="title">If your mood is heavy</div><br>
+                    <div class="subtitle"> When everything feels too much</div>
+                    <div class="message">Even when your mood feels heavy or dim, it doesn’t define who you are or what your day will become 🌧️. You are allowed to feel this way without pressure to fix it instantly, because emotions naturally shift like weather passing through 🌦️. Take things gently, one small moment at a time, and remind yourself that rest is not failure—it’s care. What feels overwhelming right now will not stay forever, even if it feels close and strong in this moment 🌙. There is still light ahead of you, even if it’s hidden behind clouds ☀️, and you are doing better than you think just by continuing through today💖</div>
+                    <div class="open-text">Click to open/close</div>
+                </div>
+
+                <div class="card" onclick="toggleCard(this)"><br>
+                    <div class="icon">🍀</div><br>
+                    <div class="title">If your mood is grounded</div><br>
+                    <div class="subtitle">When you need balance and calm</div>
+                    <div class="message">🌿This moment is steady and grounded, carrying a quiet sense of balance. Thoughts remain clear, emotions feel settled, and the pace of the day unfolds naturally. There is patience in every breath and strength in calm awareness. Nothing needs to be rushed or forced; everything is aligning in its own time. Balance creates space for peace, clarity, and gentle confidence to move forward with ease✨🌼</div>
+                    <div class="open-text">Click to open/close</div>
+                </div>
+
+                <div class="card" onclick="toggleCard(this)"><br>
+                    <div class="icon">🌞</div><br>
+                    <div class="title">If your mood is bright</div><br>
+                    <div class="subtitle">When everything feels light</div>
+                    <div class="message">☀️This moment feels light, joyful, and full of positive energy. Thoughts shine with clarity, and the heart feels open and hopeful. Creativity flows freely, and every step forward carries confidence and enthusiasm. There is gratitude for the present and excitement for what lies ahead. This brightness spreads gently, turning ordinary moments into something beautiful and meaningful🌈🌼💛</div>
+                    <div class="open-text">Click to open/close</div>
+                </div>
+            </div>
+        <script>
+            function toggleCard(card){   //this function opens and closes cards
+                card.classList.toggle("open"); //card--html element, classList-- built-in property of JS that gives access to to varios css classes on that element, toggle()--method of classList that behaves like a switch ie, it adds and removes "open" class to card element
+            }
+        </script>
+    </body>
+</html>
